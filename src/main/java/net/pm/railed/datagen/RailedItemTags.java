@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.ItemTags;
-import net.pm.railed.block.Blocks;
+import net.pm.railed.references.BlockItemIds;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,7 +15,7 @@ public class RailedItemTags extends FabricTagsProvider.ItemTagsProvider{
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        valueLookupBuilder(ItemTags.RAILS)
-                .add(Blocks.SELF_POWERED_RAIL.asItem());
+        tag(ItemTags.RAILS)
+                .add(BlockItemIds.SELF_POWERED_RAIL.item());
     }
 }

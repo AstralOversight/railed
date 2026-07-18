@@ -1,4 +1,4 @@
-package net.pm.railed.block;
+package net.pm.railed.world.level.block;
 
 import net.minecraft.world.level.block.PoweredRailBlock;
 

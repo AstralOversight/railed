@@ -3,7 +3,7 @@ package net.pm.railed.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
-import net.pm.railed.block.Blocks;
+import net.pm.railed.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 

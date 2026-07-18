@@ -8,7 +8,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.pm.railed.Railed;
-import net.pm.railed.block.Blocks;
+import net.pm.railed.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 

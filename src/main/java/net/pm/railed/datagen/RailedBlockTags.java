@@ -4,7 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
-import net.pm.railed.block.Blocks;
+import net.pm.railed.references.BlockItemIds;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,9 +15,9 @@ public class RailedBlockTags extends FabricTagsProvider.BlockTagsProvider{
 
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
-        valueLookupBuilder(BlockTags.PREVENT_MOB_SPAWNING_INSIDE)
-                .add(Blocks.SELF_POWERED_RAIL);
-        valueLookupBuilder(BlockTags.RAILS)
-                .add(Blocks.SELF_POWERED_RAIL);
+        tag(BlockTags.PREVENT_MOB_SPAWNING_INSIDE)
+                .add(BlockItemIds.SELF_POWERED_RAIL.block());
+        tag(BlockTags.RAILS)
+                .add(BlockItemIds.SELF_POWERED_RAIL.block());
     }
 }
